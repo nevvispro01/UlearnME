@@ -7,7 +7,7 @@ namespace RefactorMe
 {
     class Drawing
     {
-        static float x, y;
+        private static float x, y;
         static Graphics graphics;
 
         public static void Initialize ( Graphics novayaGraphics )
@@ -17,12 +17,12 @@ namespace RefactorMe
             graphics.Clear(Color.Black);
         }
 
-        public static void Set_position(float x0, float y0)
+        public static void SetPosition(float x0, float y0)
         {
             x = x0; y = y0;
         }
 
-        public static void MakeIt(Pen pen, double length, double angle)
+        public static void TakeStepAndDraw(Pen pen, double length, double angle)
         {
             //Делает шаг длиной dlina в направлении ugol и рисует пройденную траекторию
             var x1 = (float)(x + length * Math.Cos(angle));
@@ -52,24 +52,24 @@ namespace RefactorMe
             var x0 = (float)(diagonal_length * Math.Cos(Math.PI / 4 + Math.PI)) + width / 2f;
             var y0 = (float)(diagonal_length * Math.Sin(Math.PI / 4 + Math.PI)) + height / 2f;
 
-            Drawing.Set_position(x0, y0);
+            Drawing.SetPosition(x0, y0);
 
             DrawOneSide(sz);
 
             DrawTwoSide(sz);
 
-            DrawthreeSide(sz);
+            DrawThreeSide(sz);
 
-            DrawfourSide(sz);
+            DrawFourSide(sz);
         }
 
         public static void DrawOneSide(int sz)
         {
             //Рисуем 1-ую сторону
-            Drawing.MakeIt(Pens.Yellow, sz * 0.375f, 0);
-            Drawing.MakeIt(Pens.Yellow, sz * 0.04f * Math.Sqrt(2), Math.PI / 4);
-            Drawing.MakeIt(Pens.Yellow, sz * 0.375f, Math.PI);
-            Drawing.MakeIt(Pens.Yellow, sz * 0.375f - sz * 0.04f, Math.PI / 2);
+            Drawing.TakeStepAndDraw(Pens.Yellow, sz * 0.375f, 0);
+            Drawing.TakeStepAndDraw(Pens.Yellow, sz * 0.04f * Math.Sqrt(2), Math.PI / 4);
+            Drawing.TakeStepAndDraw(Pens.Yellow, sz * 0.375f, Math.PI);
+            Drawing.TakeStepAndDraw(Pens.Yellow, sz * 0.375f - sz * 0.04f, Math.PI / 2);
 
             Drawing.Change(sz * 0.04f, -Math.PI);
             Drawing.Change(sz * 0.04f * Math.Sqrt(2), 3 * Math.PI / 4);
@@ -78,34 +78,34 @@ namespace RefactorMe
         public static void DrawTwoSide(int sz)
         {
             //Рисуем 2-ую сторону
-            Drawing.MakeIt(Pens.Yellow, sz * 0.375f, -Math.PI / 2);
-            Drawing.MakeIt(Pens.Yellow, sz * 0.04f * Math.Sqrt(2), -Math.PI / 2 + Math.PI / 4);
-            Drawing.MakeIt(Pens.Yellow, sz * 0.375f, -Math.PI / 2 + Math.PI);
-            Drawing.MakeIt(Pens.Yellow, sz * 0.375f - sz * 0.04f, -Math.PI / 2 + Math.PI / 2);
+            Drawing.TakeStepAndDraw(Pens.Yellow, sz * 0.375f, -Math.PI / 2);
+            Drawing.TakeStepAndDraw(Pens.Yellow, sz * 0.04f * Math.Sqrt(2), -Math.PI / 2 + Math.PI / 4);
+            Drawing.TakeStepAndDraw(Pens.Yellow, sz * 0.375f, -Math.PI / 2 + Math.PI);
+            Drawing.TakeStepAndDraw(Pens.Yellow, sz * 0.375f - sz * 0.04f, -Math.PI / 2 + Math.PI / 2);
 
             Drawing.Change(sz * 0.04f, -Math.PI / 2 - Math.PI);
             Drawing.Change(sz * 0.04f * Math.Sqrt(2), -Math.PI / 2 + 3 * Math.PI / 4);
         }
 
-        public static void DrawthreeSide(int sz)
+        public static void DrawThreeSide(int sz)
         {
             //Рисуем 3-ю сторону
-            Drawing.MakeIt(Pens.Yellow, sz * 0.375f, Math.PI);
-            Drawing.MakeIt(Pens.Yellow, sz * 0.04f * Math.Sqrt(2), Math.PI + Math.PI / 4);
-            Drawing.MakeIt(Pens.Yellow, sz * 0.375f, Math.PI + Math.PI);
-            Drawing.MakeIt(Pens.Yellow, sz * 0.375f - sz * 0.04f, Math.PI + Math.PI / 2);
+            Drawing.TakeStepAndDraw(Pens.Yellow, sz * 0.375f, Math.PI);
+            Drawing.TakeStepAndDraw(Pens.Yellow, sz * 0.04f * Math.Sqrt(2), Math.PI + Math.PI / 4);
+            Drawing.TakeStepAndDraw(Pens.Yellow, sz * 0.375f, Math.PI + Math.PI);
+            Drawing.TakeStepAndDraw(Pens.Yellow, sz * 0.375f - sz * 0.04f, Math.PI + Math.PI / 2);
 
             Drawing.Change(sz * 0.04f, Math.PI - Math.PI);
             Drawing.Change(sz * 0.04f * Math.Sqrt(2), Math.PI + 3 * Math.PI / 4);
         }
 
-        public static void DrawfourSide(int sz)
+        public static void DrawFourSide(int sz)
         {
             //Рисуем 4-ую сторону
-            Drawing.MakeIt(Pens.Yellow, sz * 0.375f, Math.PI / 2);
-            Drawing.MakeIt(Pens.Yellow, sz * 0.04f * Math.Sqrt(2), Math.PI / 2 + Math.PI / 4);
-            Drawing.MakeIt(Pens.Yellow, sz * 0.375f, Math.PI / 2 + Math.PI);
-            Drawing.MakeIt(Pens.Yellow, sz * 0.375f - sz * 0.04f, Math.PI / 2 + Math.PI / 2);
+            Drawing.TakeStepAndDraw(Pens.Yellow, sz * 0.375f, Math.PI / 2);
+            Drawing.TakeStepAndDraw(Pens.Yellow, sz * 0.04f * Math.Sqrt(2), Math.PI / 2 + Math.PI / 4);
+            Drawing.TakeStepAndDraw(Pens.Yellow, sz * 0.375f, Math.PI / 2 + Math.PI);
+            Drawing.TakeStepAndDraw(Pens.Yellow, sz * 0.375f - sz * 0.04f, Math.PI / 2 + Math.PI / 2);
 
             Drawing.Change(sz * 0.04f, Math.PI / 2 - Math.PI);
             Drawing.Change(sz * 0.04f * Math.Sqrt(2), Math.PI / 2 + 3 * Math.PI / 4);
