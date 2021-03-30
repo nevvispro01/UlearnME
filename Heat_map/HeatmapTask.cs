@@ -6,23 +6,29 @@ namespace Names
     {
         public static HeatmapData GetBirthsPerDateHeatmap(NameData[] names)
         {
-            string[] Xlabels = new string[31];
-            string[] Ylabels = new string[12];
-            double[] heat = new double[31];
+            string[] xlabels = new string[30];
+            string[] ylabels = new string[12];
+            double[,] heat = new double[30,12];
             for (int i = 0; i < 30; i++)
             {
-                Xlabels[i] = (i + 2).ToString();
+                xlabels[i] = (i + 2).ToString();
             }
             for (int i = 0; i < 12; i++)
             {
-                Ylabels[i] = (i + 1).ToString();
+                ylabels[i] = (i + 1).ToString();
             }
-
+            for (int i = 0; i < names.Length; i++)
+            {
+                if (names[i].BirthDate.Day != 1)
+                {
+                    heat[names[i].BirthDate.Day - 2, names[i].BirthDate.Month - 1] += 1;
+                }
+            }
             return new HeatmapData(
                 "Пример карты интенсивностей",
-                new double[,] { { 1, 2, 3 }, { 2, 3, 4 }, { 3, 4, 4 }, { 4, 4, 4 } }, 
-                new[] { "a", "b", "c", "d" }, 
-                new[] { "X", "Y", "Z" });
+                heat, 
+                xlabels, 
+                ylabels);
         }
     }
 }
