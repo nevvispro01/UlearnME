@@ -1,0 +1,12 @@
+C:\dev\TextAnalysis\bin\Debug\HarryPotterText.txt
+C:\dev\TextAnalysis\bin\Debug\TextAnalysis.exe.config
+C:\dev\TextAnalysis\bin\Debug\TextAnalysis.exe
+C:\dev\TextAnalysis\bin\Debug\TextAnalysis.pdb
+C:\dev\TextAnalysis\bin\Debug\nunit.framework.dll
+C:\dev\TextAnalysis\bin\Debug\nunitlite.dll
+C:\dev\TextAnalysis\obj\Debug\TextAnalysis.csprojAssemblyReference.cache
+C:\dev\TextAnalysis\obj\Debug\TextAnalysis.Properties.Resources.resources
+C:\dev\TextAnalysis\obj\Debug\TextAnalysis.csproj.GenerateResource.cache
+C:\dev\TextAnalysis\obj\Debug\TextAnalysis.csproj.CopyComplete
+C:\dev\TextAnalysis\obj\Debug\TextAnalysis.exe
+C:\dev\TextAnalysis\obj\Debug\TextAnalysis.pdb
