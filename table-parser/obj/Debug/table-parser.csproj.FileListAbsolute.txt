@@ -1,0 +1,11 @@
+C:\dev\git\UlearnME\table-parser\bin\Debug\TableParser.exe.config
+C:\dev\git\UlearnME\table-parser\bin\Debug\TableParser.exe
+C:\dev\git\UlearnME\table-parser\bin\Debug\TableParser.pdb
+C:\dev\git\UlearnME\table-parser\bin\Debug\nunit.framework.dll
+C:\dev\git\UlearnME\table-parser\obj\Debug\table-parser.csprojAssemblyReference.cache
+C:\dev\git\UlearnME\table-parser\obj\Debug\TableParser.ParserMainForm.resources
+C:\dev\git\UlearnME\table-parser\obj\Debug\TableParser.Properties.Resources.resources
+C:\dev\git\UlearnME\table-parser\obj\Debug\table-parser.csproj.GenerateResource.cache
+C:\dev\git\UlearnME\table-parser\obj\Debug\table-parser.csproj.CopyComplete
+C:\dev\git\UlearnME\table-parser\obj\Debug\TableParser.exe
+C:\dev\git\UlearnME\table-parser\obj\Debug\TableParser.pdb

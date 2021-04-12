@@ -25,7 +25,18 @@ namespace TableParser
     {
         public static Token ReadQuotedField(string line, int startIndex)
         {
-            return new Token(line, startIndex, line.Length - startIndex);
+            string result = "";
+            var index = startIndex;
+            var a = line[index];
+            index++;
+            var i = line[index];
+            while ((i != a)&&(index < line.Length))
+            {
+                result += line[index];
+                index++;
+            }
+
+            return new Token(result, startIndex, line.Length - startIndex);
         }
     }
 }
