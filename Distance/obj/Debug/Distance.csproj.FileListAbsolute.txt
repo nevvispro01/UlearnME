@@ -7,3 +7,12 @@ C:\dev\Distance\bin\Debug\TestingRoom.dll
 C:\dev\Distance\obj\Debug\Distance.csproj.CopyComplete
 C:\dev\Distance\obj\Debug\Distance.exe
 C:\dev\Distance\obj\Debug\Distance.pdb
+C:\dev\Git\UlearnME\Distance\bin\Debug\Distance.exe.config
+C:\dev\Git\UlearnME\Distance\bin\Debug\Distance.exe
+C:\dev\Git\UlearnME\Distance\bin\Debug\Distance.pdb
+C:\dev\Git\UlearnME\Distance\bin\Debug\TestingRoom.dll
+C:\dev\Git\UlearnME\Distance\obj\Debug\Distance.csprojAssemblyReference.cache
+C:\dev\Git\UlearnME\Distance\obj\Debug\Distance.csproj.CoreCompileInputs.cache
+C:\dev\Git\UlearnME\Distance\obj\Debug\Distance.csproj.CopyComplete
+C:\dev\Git\UlearnME\Distance\obj\Debug\Distance.exe
+C:\dev\Git\UlearnME\Distance\obj\Debug\Distance.pdb

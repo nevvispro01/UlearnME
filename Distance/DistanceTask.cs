@@ -17,10 +17,8 @@ namespace DistanceTask
 			double y21 = y - by;
 			double x22 = ax - bx;
 			double y22 = ay - by;
-			double cos1 = (x11 * x12 + y11 * y12) / (Math.Sqrt(x11 * x11 + y11 * y11) * Math.Sqrt(x12 * x12 + y12 + y12));
-			double cos2 = (x21 * x22 + y21 * y22) / (Math.Sqrt(x21 * x21 + y21 * y21) * Math.Sqrt(x22 * x22 + y22 + y22));
-			double acos1 = Math.Acos(cos1);
-			double acos2 = Math.Acos(cos2);
+			double cos1 = (x11 * x12 + y11 * y12) / (Math.Sqrt(x11 * x11 + y11 * y11) * Math.Sqrt(x12 * x12 + y12 * y12));
+			double cos2 = (x21 * x22 + y21 * y22) / (Math.Sqrt(x21 * x21 + y21 * y21) * Math.Sqrt(x22 * x22 + y22 * y22));
 			if ((ax == bx)&&(ay == by))
 			{
 				return Math.Sqrt((ax - x) * (ax - x) + (ay - y) * (ay - y));
