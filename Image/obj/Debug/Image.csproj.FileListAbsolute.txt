@@ -1,0 +1,8 @@
+C:\dev\Git\UlearnME\Image\bin\Debug\eurobot.bmp
+C:\dev\Git\UlearnME\Image\bin\Debug\Recognizer.exe.config
+C:\dev\Git\UlearnME\Image\bin\Debug\Recognizer.exe
+C:\dev\Git\UlearnME\Image\bin\Debug\Recognizer.pdb
+C:\dev\Git\UlearnME\Image\obj\Debug\Image.csprojAssemblyReference.cache
+C:\dev\Git\UlearnME\Image\obj\Debug\Image.csproj.CoreCompileInputs.cache
+C:\dev\Git\UlearnME\Image\obj\Debug\Recognizer.exe
+C:\dev\Git\UlearnME\Image\obj\Debug\Recognizer.pdb

@@ -20,7 +20,17 @@
 
 		public static double[,] ToGrayscale(Pixel[,] original)
 		{
-			return new double[original.GetLength(0), original.GetLength(1)];
+			var grayscale = new double[original.GetLength(0), original.GetLength(1)];
+			var x = original.GetLength(0);
+			var y = original.GetLength(1);
+			for (int i = 0; i < x; i++)
+            {
+				for (int j = 0; j < y; j++)
+                {
+					grayscale[i, j] = (0.299 * original[i, j].R + 0.587 * original[i, j].G + 0.114 * original[i, j].B) / 255;
+                }
+            }
+			return grayscale;
 		}
 	}
 }
